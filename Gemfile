@@ -11,6 +11,7 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'rake', '< 11.0'
+gem 'json'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -38,7 +39,7 @@ group :development, :test do
 end 
 
 group :test do
-  gem 'capybara', '~> 2.3.0'
+  gem 'capybara', '~> 2.8'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
