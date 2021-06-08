@@ -2,7 +2,6 @@ require "rails_helper"
 
 feature "User sees own todos" do
     scenario "doesnt see others' todos" do
-        byebug
         Todo.create(title: "Buy milk", email: "someone_else@example.com")
 
         sign_in_as "someone@example.com"
@@ -10,3 +9,4 @@ feature "User sees own todos" do
         expect(page).not_to have_css ".todos li", text: "Buy milk"
     end
 end
+
